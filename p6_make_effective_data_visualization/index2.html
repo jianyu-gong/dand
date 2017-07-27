@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+      <meta charset="utf-8">
+      <script src="http://d3js.org/d3.v3.min.js"></script>
+      <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+      <script type="text/javascript" src="js/main2.js"></script>
+      <link rel="stylesheet" href=".\\css\\style1.css">
+  </head>
+
+  <body>
+    <div class="text">
+      <h2>
+        Aloha Airlines beats other 19 carriers in 2008!
+      </h2>
+      <p>
+        This bubble chart shows that Aloha Airlines has the lowest percentage of delayed flight(25%). Also, Aloha Airlines can arrive the destination 3 minutes in advance in average. On the other hand, half of the American Airlines flights are delayed in 2008 and the average arrival delay time is 13 minutes. As a result, choosing Aloha Airlines if you hate delay.
+      </p>
+    </div>
+
+    <div id="bubble">
+          <script type="text/javascript">
+            d3.csv(".\\data\\2008_by_company.csv", draw_bubble); // Use D3 to load the CSV file and pass the contents to the draw function
+          </script>
+    </div>
+
+  <div class="text">
+      <h2>
+        Saturday is good for fly!
+      </h2>
+      <p>
+        The percentages of delayed flights do not have big difference from Sunday to Saturday ranging from 40% (Saturday) to 48% (Friday). In order to avoid delay, try to fly on Saturday!  
+      </p>
+    </div>
+
+    <div id="bar">
+          <script type="text/javascript">
+            d3.csv(".\\data\\2008_by_day.csv", draw_barplot); // Use D3 to load the CSV file and pass the contents to the draw function
+          </script>
+    </div>
+  </body>
+</html>

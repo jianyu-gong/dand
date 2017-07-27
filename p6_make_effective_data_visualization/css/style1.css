@@ -1,0 +1,22 @@
+h2 {
+    text-align: center;
+    font-family: Courier; 
+    font-size: xx-large;
+}    
+
+p {
+  font-family: Courier; 
+  text-align:center;
+   
+}
+
+.text {
+      width: 1400;
+      height: 600;
+}
+
+svg {
+    margin-left:auto; 
+    margin-right:auto; 
+    display:block;  
+}
